@@ -6,6 +6,6 @@ To build:
 
 make clean
 make mrproper
-make gogh_defconfig
+make VaeVictus_defconfig
 make oldconfig
 make
