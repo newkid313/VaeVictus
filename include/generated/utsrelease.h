@@ -1,1 +1,1 @@
-#define UTS_RELEASE "3.0.31VictoriousVM"
+#define UTS_RELEASE "3.0.31VaeVictus-0.1.2-g72aac03-dirty"

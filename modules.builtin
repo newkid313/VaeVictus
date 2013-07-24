@@ -28,6 +28,7 @@ kernel/fs/nls/nls_cp437.ko
 kernel/fs/nls/nls_ascii.ko
 kernel/fs/nls/nls_iso8859-1.ko
 kernel/fs/nls/nls_utf8.ko
+kernel/fs/ntfs/ntfs.ko
 kernel/crypto/crypto.ko
 kernel/crypto/crypto_wq.ko
 kernel/crypto/crypto_algapi.ko
@@ -71,6 +72,11 @@ kernel/drivers/cpufreq/cpufreq_performance.ko
 kernel/drivers/cpufreq/cpufreq_powersave.ko
 kernel/drivers/cpufreq/cpufreq_userspace.ko
 kernel/drivers/cpufreq/cpufreq_ondemand.ko
+kernel/drivers/cpufreq/cpufreq_conservative.ko
+kernel/drivers/cpufreq/cpufreq_interactive.ko
+kernel/drivers/cpufreq/cpufreq_badass.ko
+kernel/drivers/cpufreq/cpufreq_smartass2.ko
+kernel/drivers/cpufreq/cpufreq_lagfree.ko
 kernel/drivers/cpufreq/freq_table.ko
 kernel/drivers/gpio/pm8xxx-gpio.ko
 kernel/drivers/gpio/pm8xxx-mpp.ko

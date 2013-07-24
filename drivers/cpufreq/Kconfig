@@ -110,16 +110,16 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	  'interactive' governor for latency-sensitive workloads.
 
 config CPU_FREQ_DEFAULT_GOV_BADASS
-  bool "badass"
-  select CPU_FREQ_GOV_BADASS
-  help
-    Use the CPUFreq governor 'badass' as default. 
+	bool "badass"
+	select CPU_FREQ_GOV_BADASS
+	help
+	  Use the CPUFreq governor 'badass' as default. 
 
 config CPU_FREQ_DEFAULT_GOV_SMARTASS2
-  bool "smartass2"
-  select CPU_FREQ_GOV_SMARTASS2
-  help
-    Use the CPUFreq governor 'smartassV2' as default.
+	bool "smartass2"
+	select CPU_FREQ_GOV_SMARTASS2
+	help
+	  Use the CPUFreq governor 'smartassV2' as default.
 
 config CPU_FREQ_DEFAULT_GOV_LAGFREE
         bool "lagfree"
@@ -190,6 +190,19 @@ config CPU_FREQ_GOV_ONDEMAND
 
 	  If in doubt, say N.
 
+config CPU_FREQ_MIN_TICKS
+	int "Ticks between governor polling interval."
+	default 10
+	help
+	  Minimum number of ticks between polling interval for governors.
+	
+config CPU_FREQ_SAMPLING_LATENCY_MULTIPLIER
+	int "Sampling rate multiplier for governors."
+	default 1000
+	help
+	  Sampling latency rate multiplied by the cpu switch latency.
+	  Affects governor polling.
+
 config CPU_FREQ_GOV_INTERACTIVE
 	tristate "'interactive' cpufreq policy governor"
 	help
@@ -231,16 +244,16 @@ config CPU_FREQ_GOV_CONSERVATIVE
 	  If in doubt, say N.
 
 config CPU_FREQ_GOV_BADASS
-  tristate "'badass' cpufreq governor"
-  depends on CPU_FREQ
-  help
-    'badass' - a badass governor for your pyra based phone!
+	tristate "'badass' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	  'badass' - a badass governor for your pyra based phone!
 
 config CPU_FREQ_GOV_SMARTASS2
-  tristate "'smartassV2' cpufreq governor"
-  depends on CPU_FREQ
-  help
-    'smartassV2' - a "smart" optimized governor for the pyramid!int "Sampling rate multiplier for governors."
+	tristate "'smartassV2' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	  'smartassV2' - a "smart" optimized governor for the pyramid!int "Sampling rate multiplier for governors."
 
 config CPU_FREQ_GOV_LAGFREE
         tristate "'lagfree' cpufreq governor"
