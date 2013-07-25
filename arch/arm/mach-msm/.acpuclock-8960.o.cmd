@@ -6,6 +6,8 @@ deps_arch/arm/mach-msm/acpuclock-8960.o := \
     $(wildcard include/config/sec/debug/dcvs/log.h) \
     $(wildcard include/config/sec/l1/dcache/panic/chk.h) \
     $(wildcard include/config/ctl.h) \
+    $(wildcard include/config/msm/cpu/freq/max.h) \
+    $(wildcard include/config/msm/cpu/freq/min.h) \
     $(wildcard include/config/msm/cpu/max/clk/1dot2ghz.h) \
     $(wildcard include/config/msm/dcvs/for/msm8260a.h) \
     $(wildcard include/config/cpu/freq/msm.h) \
