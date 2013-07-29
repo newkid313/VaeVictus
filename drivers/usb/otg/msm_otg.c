@@ -954,6 +954,7 @@ static void msm_otg_notify_charger(struct msm_otg *motg, unsigned mA)
 		return;
 
 	motg->cur_power = mA;
+/*
 #ifdef CONFIG_FORCE_FAST_CHARGE
 	if (force_fast_charge == 1) {
 			mA = USB_FASTCHG_LOAD;
@@ -962,12 +963,15 @@ static void msm_otg_notify_charger(struct msm_otg *motg, unsigned mA)
 		pr_info("USB fast charging is OFF.\n");
 	}
 #endif
+
 	dev_info(motg->phy.dev, "Avail curr from USB = %u\n", mA);
 
 	pm8921_charger_vbus_draw(mA);
 	msm_otg_notify_power_supply(motg, mA);
 
+
 	motg->cur_power = mA;
+*/
 }
 static int msm_otg_set_power(struct otg_transceiver *otg, unsigned mA)
 {
