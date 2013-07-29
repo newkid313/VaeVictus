@@ -2347,6 +2347,12 @@ config FORCE_FAST_CHARGE
 	  A simple sysfs interface to force adapters that
 	  are detected as USB to charge as AC.
 
+config CONFIG_GPU_CONTROL
+	bool "Added GPU Control driver"
+	default y
+	help
+	  A simple gpu control driver to OC/UC gpu
+
 config MSM_DCVS_FOR_MSM8260A
 	bool "MSM8260a DVFS support"
 	help
